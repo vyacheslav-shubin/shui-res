@@ -22,6 +22,18 @@
    inkscape:export-ydpi="96">
   <defs
      id="defs3635">
+    <linearGradient
+       id="linearGradient6773"
+       inkscape:collect="always">
+      <stop
+         id="stop6769"
+         offset="0"
+         style="stop-color:#f8d878;stop-opacity:1" />
+      <stop
+         id="stop6771"
+         offset="1"
+         style="stop-color:#f81430;stop-opacity:1" />
+    </linearGradient>
     <inkscape:path-effect
        effect="bspline"
        id="path-effect3339"
@@ -7229,6 +7241,15 @@
        y1="499.99887"
        x2="990.05792"
        y2="499.99887" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6773"
+       id="linearGradient6599"
+       x1="226.89999"
+       y1="226.89999"
+       x2="837.27435"
+       y2="778.09747"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -7237,9 +7258,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="-625.86976"
-     inkscape:cy="-893.70132"
+     inkscape:zoom="11.313708"
+     inkscape:cx="467.67655"
+     inkscape:cy="-379.29129"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -19221,5 +19242,24 @@
     <g
        id="g12-96"
        transform="matrix(0.02429847,0,0,0.02454897,-138.22319,520.99843)" />
+    <rect
+       style="fill:#181818;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="rect8057-89-7"
+       width="5.0270824"
+       height="5.0270824"
+       x="123.53745"
+       y="391.30484" />
+    <g
+       id="g8-9"
+       transform="matrix(0.00512968,0,0,0.00512968,123.48615,391.25354)">
+      <g
+         id="g6-2">
+        <path
+           d="M 773.1,773.1 V 226.9 H 226.9 V 773 H 773.1 Z M 990,446.4 H 880.3 V 553.6 H 990 V 663.3 H 880.3 V 773 c 0,28.9 -10.6,54 -31.9,75.3 -21.3,21.3 -46.4,31.9 -75.3,31.9 H 663.3 V 990 H 553.6 V 880.3 H 446.4 V 990 H 336.7 V 880.3 H 226.9 c -28.9,0 -54,-10.6 -75.3,-31.9 C 130.3,827.1 119.7,802 119.7,773.1 V 663.3 H 10 V 553.6 H 119.7 V 446.4 H 10 V 336.7 H 119.7 V 226.9 c 0,-28.9 10.6,-54 31.9,-75.3 21.3,-21.3 46.4,-31.9 75.3,-31.9 H 336.6 V 10 H 446.3 V 119.7 H 553.5 V 10 h 109.7 v 109.7 h 109.7 c 28.9,0 54,10.6 75.3,31.9 21.3,21.3 31.9,46.4 31.9,75.3 V 336.6 H 990 Z M 553.6,553.6 V 446.4 H 446.4 V 553.6 Z M 663.3,336.7 V 663.4 H 336.7 V 336.7 Z"
+           id="path4-66"
+           inkscape:connector-curvature="0"
+           style="fill:url(#linearGradient6599);fill-opacity:1" />
+      </g>
+    </g>
   </g>
 </svg>
