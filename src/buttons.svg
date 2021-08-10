@@ -22,6 +22,20 @@
    inkscape:export-ydpi="96">
   <defs
      id="defs3635">
+    <marker
+       inkscape:stockid="DiamondMend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6157"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5994"
+         d="M 0,-7.0710768 L -7.0710894,0 L 0,7.0710589 L 7.0710462,0 L 0,-7.0710768 z "
+         style="fill-rule:evenodd;stroke:#f88030;stroke-width:1pt;stroke-opacity:1;fill:#f88030;fill-opacity:1"
+         transform="scale(0.4) translate(-6.5,0)" />
+    </marker>
     <linearGradient
        id="linearGradient6773"
        inkscape:collect="always">
@@ -198,7 +212,7 @@
        inkscape:isstock="true">
       <path
          id="path5621"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#f88030;stroke-opacity:1;fill:#f88030;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(0.6) rotate(180) translate(0,0)" />
     </marker>
@@ -251,7 +265,7 @@
       <path
          id="path5739"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#f88030;stroke-width:1pt;stroke-opacity:1;fill:#f88030;fill-opacity:1"
          transform="scale(0.4)" />
     </marker>
     <marker
@@ -278,7 +292,7 @@
        inkscape:isstock="true">
       <path
          id="path5615"
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#f88030;stroke-opacity:1;fill:#f88030;fill-opacity:1"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
          transform="scale(1.1) rotate(180) translate(1,0)" />
     </marker>
@@ -335,7 +349,7 @@
       <path
          id="path5597"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#f88030;stroke-width:1pt;stroke-opacity:1;fill:#f88030;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
     <inkscape:path-effect
@@ -2710,7 +2724,7 @@
        x2="18.425632"
        y2="360.93787"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(2.8178459,0,0,1,-15.123616,48.200174)" />
+       gradientTransform="matrix(2.8178459,0,0,1,38.149581,112.73573)" />
     <marker
        inkscape:stockid="TriangleInM"
        orient="auto"
@@ -2760,7 +2774,7 @@
        x2="24.63942"
        y2="362.85559"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(4.4554104,0,0,1,-71.718766,0.77051965)" />
+       gradientTransform="matrix(4.4554104,0,0,1,-31.044315,112.73573)" />
     <marker
        inkscape:stockid="TriangleInM"
        orient="auto"
@@ -2810,7 +2824,7 @@
        x2="23.536169"
        y2="364.4761"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.6707789,0,0,1,26.903503,24.231087)" />
+       gradientTransform="matrix(1.6707789,0,0,1,96.117187,112.73574)" />
     <marker
        inkscape:stockid="TriangleInM"
        orient="auto"
@@ -2860,7 +2874,7 @@
        x2="24.639421"
        y2="364.67969"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.93076099,0,0,1,4.3500497,20.953619)" />
+       gradientTransform="matrix(0.93076099,0,0,1,139.67312,112.73573)" />
     <marker
        inkscape:stockid="TriangleInM"
        orient="auto"
@@ -2910,7 +2924,7 @@
        x2="56.329712"
        y2="380.69168"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-33.072917,-15.742708)" />
+       gradientTransform="translate(7.6015331,96.222459)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient853-5-0-2-5-0"
@@ -2920,7 +2934,7 @@
        x2="56.937016"
        y2="364.96002"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-29.653554,20.673298)" />
+       gradientTransform="translate(105.66951,112.45541)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient853-5-0-2-5-0"
@@ -2930,7 +2944,7 @@
        x2="58.025154"
        y2="369.78949"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(8.2020833,18.917708)" />
+       gradientTransform="translate(77.415767,107.42236)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient853-5-0-2-5-0"
@@ -2940,7 +2954,7 @@
        x2="59.809853"
        y2="374.29742"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-9.7895833,38.629167)" />
+       gradientTransform="translate(43.483613,103.16473)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient853-5-0-2-5-0"
@@ -7269,6 +7283,70 @@
        y1="167.68628"
        x2="-182.60638"
        y2="195.08667" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2127-9"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6810"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6812"
+       gradientUnits="userSpaceOnUse"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6814"
+       gradientUnits="userSpaceOnUse"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6816"
+       gradientUnits="userSpaceOnUse"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6818"
+       gradientUnits="userSpaceOnUse"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient853-5-0-2-5-0"
+       id="linearGradient6820"
+       gradientUnits="userSpaceOnUse"
+       x1="135.62457"
+       y1="344.46481"
+       x2="774.64362"
+       y2="661.51733" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -7277,9 +7355,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="254.83544"
-     inkscape:cy="926.15179"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="511.62777"
+     inkscape:cy="-776.63657"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10232,41 +10310,27 @@
            id="tspan4258-1-6-6"
            sodipodi:role="line">E1</tspan></text>
     </g>
-    <g
-       id="g6172"
-       transform="translate(-17.330208,0.52916668)"
-       inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/size/size3.png"
+    <rect
+       style="fill:#181818;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.13063183;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect835-0-2-9-6"
+       width="23.8125"
+       height="15.875"
+       x="49.774426"
+       y="463.02203" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect837-374-4-2-6"
+       width="23.426584"
+       height="15.489084"
+       x="49.967384"
+       y="463.215"
+       ry="4.6967511"
+       inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/e0.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <rect
-         y="355.68857"
-         x="8.9596586"
-         height="15.875"
-         width="23.8125"
-         id="rect835-0-2-9-6"
-         style="fill:#181818;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.13063183;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/e0.png"
-         ry="4.6967511"
-         y="355.88153"
-         x="9.1526165"
-         height="15.489084"
-         width="23.426584"
-         id="rect837-374-4-2-6"
-         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:original-d="m 13.718494,363.62607 c 4.765357,-2.6e-4 9.530297,-2.6e-4 14.29483,0"
-         inkscape:path-effect="#path-effect5876-8-5-7"
-         inkscape:connector-curvature="0"
-         id="path5874-3-5-7"
-         d="m 13.718494,363.62607 c 4.765357,0 9.530297,0 14.29483,0"
-         style="fill:url(#linearGradient5900-5-7-0);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6103);stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-8);marker-end:url(#marker5892-6-5-3)" />
-    </g>
+       inkscape:export-ydpi="96" />
     <g
        id="g6167"
-       transform="translate(1.0696487,-8.8377235)"
+       transform="translate(136.3927,78.312651)"
        inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/size/size0.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -10289,16 +10353,9 @@
          id="rect837-374-4-2-6-9"
          style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <path
-       id="path5874-3-5-8-1"
-       style="fill:url(#linearGradient5900-5-7-7-8);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6180);stroke-width:0.79400003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-1-7);marker-end:url(#marker5892-6-5-9-6)"
-       inkscape:path-effect="#path-effect5876-8-5-9-2"
-       inkscape:original-d="m 22.198387,383.80916 c 0.995511,-2.6e-4 1.990933,-2.6e-4 2.986273,0"
-       d="m 22.198387,383.80916 c 0.995511,0 1.990933,0 2.986273,0"
-       inkscape:connector-curvature="0" />
     <g
        id="g6167-7"
-       transform="translate(39.000882,-5.5602635)"
+       transform="translate(108.21457,78.312651)"
        inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/size/size1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -10321,16 +10378,9 @@
          id="rect837-374-4-2-6-9-2"
          style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <path
-       style="fill:url(#linearGradient5900-5-7-7);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6221);stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-1);marker-end:url(#marker5892-6-5-9)"
-       d="m 58.942476,387.08662 c 1.787009,0 3.573861,0 5.360561,0"
-       id="path5874-3-5-8"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect5876-8-5-9"
-       inkscape:original-d="m 58.942476,387.08662 c 1.787009,-2.6e-4 3.573861,-2.6e-4 5.360561,0" />
     <g
        id="g6167-7-7"
-       transform="translate(20.810134,18.408836)"
+       transform="translate(74.083328,78.312651)"
        inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/90x60/size/size2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -10353,13 +10403,6 @@
          id="rect837-374-4-2-6-9-2-5"
          style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <path
-       style="fill:url(#linearGradient5900-5-7);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6250);stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1);marker-end:url(#marker5892-6-5)"
-       d="m 38.911592,411.05572 c 3.013873,0 6.027482,0 9.040834,0"
-       id="path5874-3-5"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect5876-8-5"
-       inkscape:original-d="m 38.911592,411.05572 c 3.013873,-2.6e-4 6.027482,-2.6e-4 9.040834,0" />
     <g
        id="g6356"
        inkscape:export-filename="/home/shubin/electronic/firmware/mks-robin/my/Marlin/Marlin/src/lcd/extui/lib/shui/res/img/26x26/x.png"
@@ -19353,5 +19396,82 @@
        id="image6837-3"
        x="-5.5562487"
        y="7.8529491" />
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       style="fill:#181818;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.13063183;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect835-5-2-0-7"
+       width="23.8125"
+       height="15.875"
+       x="-47.640186"
+       y="185.0412" />
+    <g
+       id="g14-28"
+       transform="matrix(0.01538372,0,0,0.01520257,-43.425795,185.37742)"
+       style="fill:url(#linearGradient6810);fill-opacity:1"
+       inkscape:transform-center-x="-14.356252"
+       inkscape:transform-center-y="-0.09094601">
+      <path
+         d="m 402,497.6 c 0,4.6 0.2,9.2 0.6,13.7 L 532.1,381.8 C 522,377.4 511.2,375 500,375 c -54.1,0.1 -98,55 -98,122.6 z"
+         id="path4-97"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linearGradient6812);fill-opacity:1" />
+      <path
+         d="M 295.2,618.7 C 269.8,584 255,542.4 255,497.6 255,375.8 364.7,277.1 500,277.1 c 40.5,0 78.7,8.8 112.3,24.5 L 687,227 C 629.4,198.2 566.2,179.1 500,179.1 229.4,179.1 10,497.6 10,497.6 c 0,0 78.8,114.4 200.2,206.1 z"
+         id="path6-3"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linearGradient6814);fill-opacity:1" />
+      <path
+         d="M 597.9,501.6 481.6,617.9 c 6,1.4 12.1,2.2 18.4,2.2 53,0 96.3,-52.8 97.9,-118.5 z"
+         id="path8-6"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linearGradient6816);fill-opacity:1" />
+      <path
+         d="m 800.1,299.4 -87.9,87.9 c 20.9,32.4 32.8,70.1 32.8,110.3 0,121.7 -132.3,220.5 -245,220.5 -35.5,0 -69.2,-6.8 -99.6,-19 l -75.1,75.1 c 54.3,25.4 113.1,41.9 174.7,41.9 270.6,0 490,-318.5 490,-318.5 0,0 -74.4,-107.9 -189.9,-198.2 z"
+         id="path10-1"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linearGradient6818);fill-opacity:1" />
+      <path
+         d="m 880,175.3 c 12.8,-12.8 12.8,-33.6 0,-46.4 -12.8,-12.8 -33.6,-12.8 -46.4,0 v 0 0 L 137.8,824.7 c -12.8,12.8 -12.8,33.6 0,46.4 12.8,12.8 33.6,12.8 46.4,0 L 879.1,176.2 c 0.3,-0.3 0.7,-0.6 0.9,-0.9 z"
+         id="path12-29"
+         inkscape:connector-curvature="0"
+         style="fill:url(#linearGradient6820);fill-opacity:1" />
+    </g>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4854f8;stroke-width:0.38591588;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect837-1-3-7-4"
+       width="23.426584"
+       height="15.489084"
+       x="-47.447227"
+       y="185.23416"
+       ry="4.6967511" />
+    <path
+       style="fill:url(#linearGradient5900-5-7-0);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6103);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-8);marker-end:url(#TriangleOutM)"
+       d="m 54.392945,475.59128 c 4.765357,0 9.530297,0 14.29483,0"
+       id="path5874-3-5-7"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect5876-8-5-7"
+       inkscape:original-d="m 54.392945,475.59128 c 4.765357,-2.6e-4 9.530297,-2.6e-4 14.29483,0" />
+    <path
+       style="fill:url(#linearGradient5900-5-7);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6250);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1);marker-end:url(#marker5892-6-5)"
+       d="m 92.184789,475.59128 c 3.013872,0 6.027482,0 9.040831,0"
+       id="path5874-3-5"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect5876-8-5"
+       inkscape:original-d="m 92.184789,475.59128 c 3.013872,-2.6e-4 6.027482,-2.6e-4 9.040831,0" />
+    <path
+       style="fill:url(#linearGradient5900-5-7-7);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6221);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-1);marker-end:url(#marker5892-6-5-9)"
+       d="m 128.15616,475.59128 c 1.78701,0 3.57386,0 5.36056,0"
+       id="path5874-3-5-8"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect5876-8-5-9"
+       inkscape:original-d="m 128.15616,475.59128 c 1.78701,-2.6e-4 3.57386,-2.6e-4 5.36056,0" />
+    <path
+       id="path5874-3-5-8-1"
+       style="fill:url(#linearGradient5900-5-7-7-8);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6180);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker5880-5-1-1-7);marker-end:url(#marker5892-6-5-9-6)"
+       inkscape:path-effect="#path-effect5876-8-5-9-2"
+       inkscape:original-d="m 157.52145,475.59128 c 0.99551,-2.6e-4 1.99093,-2.6e-4 2.98627,0"
+       d="m 157.52145,475.59128 c 0.99551,0 1.99093,0 2.98627,0"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
