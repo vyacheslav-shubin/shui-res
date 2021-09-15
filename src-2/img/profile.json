@@ -1,0 +1,20 @@
+{
+  "palette": {
+    "system-display": {
+      "bg": "0x000080",
+      "fg": "0xFFFFFF"
+    },
+    "main": {
+      "bg": "0x000000",
+      "fg": "0xFFFFFF"
+    },
+    "progress": {
+      "bg": "0x00FF00",
+      "fg": "0x000000"
+    },
+    "terminal": {
+      "bg": "0x000000",
+      "fg": "0x00FF00"
+    }
+  }
+}
