@@ -12,9 +12,19 @@
       "bg": "0x00FF00",
       "fg": "0x000000"
     },
+    "warn_progress": {
+      "bg": "0xFF6040",
+      "fg": "0x000000"
+    },
+    "edit_box": {
+      "bg": "0xFFFFFF",
+      "fg": "0x000000"
+    },
     "terminal": {
       "bg": "0x000000",
       "fg": "0x00FF00"
-    }
+    },
+    "config-line" : "0x00FF00",
+    "dialog-frame" : "0x303CCB"
   }
 }

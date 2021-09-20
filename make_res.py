@@ -54,17 +54,22 @@ def copy_proc(infn, outfn):
 		os.makedirs(directory)
 	copyfile(infn, outfn)
 
-def color_out(file, json_color):
+def dual_color_out(file, json_color):
 	fg_b = rgb_to_565(int(json_color["fg"], 16).to_bytes(3, "big"))
 	bg_b = rgb_to_565(int(json_color["bg"], 16).to_bytes(3, "big"))
 	file.write(bg_b)
 	file.write(fg_b)
 	pass
 
+def color_out(file, json_color):
+	bg_b = rgb_to_565(int(json_color, 16).to_bytes(3, "big"))
+	file.write(bg_b)
+	pass
+
 def json_build_profile(infn, outfn):
 	print("JSON")
 	import json
-	version=1
+	version=2
 	data=None
 	with open(infn, "r") as json_file:
 		data = json.load(json_file)
@@ -73,10 +78,14 @@ def json_build_profile(infn, outfn):
 	with open(outfn, "wb") as bin_out:
 		bin_out.write(struct.pack('<H', version))
 		palette=data["palette"]
-		color_out(bin_out, palette["system-display"])
-		color_out(bin_out, palette["main"])
-		color_out(bin_out, palette["progress"])
-		color_out(bin_out, palette["terminal"])
+		dual_color_out(bin_out, palette["system-display"])
+		dual_color_out(bin_out, palette["main"])
+		dual_color_out(bin_out, palette["progress"])
+		dual_color_out(bin_out, palette["terminal"])
+		dual_color_out(bin_out, palette["warn_progress"])
+		dual_color_out(bin_out, palette["edit_box"])
+		color_out(bin_out, palette["config-line"])
+		color_out(bin_out, palette["dialog-frame"])
 		while bin_out.tell()<64:
 			bin_out.write(b'\x00')
 		bin_out.close()
