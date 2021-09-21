@@ -25,6 +25,9 @@
       "fg": "0x00FF00"
     },
     "config-line" : "0x00FF00",
-    "dialog-frame" : "0x303CCB"
+    "dialog-frame" : "0x303CCB",
+    "console-frame" : "0x00FF00",
+    "temperature-point" : "0xFFFFFF",
+    "temperature-line" : "0xFFFF00"
   }
 }

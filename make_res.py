@@ -69,7 +69,7 @@ def color_out(file, json_color):
 def json_build_profile(infn, outfn):
 	print("JSON")
 	import json
-	version=2
+	version=3
 	data=None
 	with open(infn, "r") as json_file:
 		data = json.load(json_file)
@@ -86,6 +86,10 @@ def json_build_profile(infn, outfn):
 		dual_color_out(bin_out, palette["edit_box"])
 		color_out(bin_out, palette["config-line"])
 		color_out(bin_out, palette["dialog-frame"])
+		color_out(bin_out, palette["console-frame"])
+		color_out(bin_out, palette["temperature-point"])
+		color_out(bin_out, palette["temperature-line"])
+
 		while bin_out.tell()<64:
 			bin_out.write(b'\x00')
 		bin_out.close()
