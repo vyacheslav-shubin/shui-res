@@ -24,10 +24,12 @@ dest_dir=project + '/build/img'
 res_file=project + '/RESDUMP.BIN'
 
 files_list=[]
+pallete={}
 
 def rgb_to_565(rgb):
 	b1=(rgb[2]>>3) | ((rgb[1]<<3) & 0xe0)
 	b2=(rgb[0] & 0xF8) | (rgb[1]>>5)
+	pallete['{:X}{:X}'.format(b1, b2)] = 1
 	return bytearray([b1, b2])
 
 def rgb_to_565_(r, g, b):
@@ -199,4 +201,5 @@ for d, dirs, files in os.walk(res_dir):
 walk(dest_dir)
 make_dump(res_file)
 check_dump(res_file)
+print("Pallete:", len(pallete))
 
