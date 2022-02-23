@@ -1,0 +1,16 @@
+{
+  "printers":[
+    {"name":"Dev", "ip":"192.168.2.24", "esp32":true},
+    {"name":"Local:8081", "ip":"127.0.0.1", "esp32":true}
+  ],
+  "proxy": {
+    "host": "proxy.krista.ru",
+    "port": 8080,
+    "user": "shubin",
+    "password": "shubin_password"
+  },
+  "yandex": {
+    "key": "AQAAAAAX2tMUAAcPXPmfLJQBBkX2vxUft8UKfLI",
+    "override": true
+  }
+}
