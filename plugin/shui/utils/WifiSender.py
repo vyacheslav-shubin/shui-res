@@ -41,9 +41,7 @@ class WifiSender(NetworkSender):
             self.reply.finished.connect(self.handleResponse)
             self.reply.uploadProgress.connect(self.onUploadProgress)
             self.reply.sslErrors.connect(self.onSslError)
-            #self.disableUI(True)
         except Exception as e:
-            #self.progress_label.setText("{0}:{1}".format(lang.error, str(e)))
             self.app.onMessage.emit(str(e))
             print(str(e))
             self.postData=None

@@ -1,1 +1,3 @@
 /build/
+/plugin/config_local.json
+.*/__pycache__

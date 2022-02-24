@@ -8,11 +8,11 @@ class ConsoleTab(QtWidgets.QWidget):
     def __init__(self, app):
         super().__init__()
         self.app = app
+        self.title = self.app.lang["terminal"]
         self.app.onUartRow.connect(self.addRow)
         self.app.onUartMessage.connect(self.addRow)
         self.app.onUartConnect.connect(self.onUartConnect)
         self.rows=[]
-        self.title = "Terminal"
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -49,7 +49,7 @@ class ConsoleTab(QtWidgets.QWidget):
         self.mainLayout.addLayout(self.sendLayout)
 
         self.btSenb.clicked.connect(self.doSend)
-        self.addRow("SHUI WIFI plugin")
+        self.addRow(self.app.lang["title"])
         pass
 
     def keyPressEvent(self, event):

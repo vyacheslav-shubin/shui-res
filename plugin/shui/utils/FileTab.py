@@ -7,8 +7,8 @@ class FileTab(QtWidgets.QWidget):
 
     def __init__(self, app):
         super().__init__()
-        self.title = "File"
         self.app=app
+        self.title = self.app.lang["file"]
         self.app.onUploadFinished.connect(self.onFinised)
         self.app.onProgress.connect(self.onProgress)
         self.app.onMessage.connect(self.onMessage)
@@ -25,13 +25,13 @@ class FileTab(QtWidgets.QWidget):
         mainLayout.addLayout(rightArea)
 
         actions_layout = QtWidgets.QVBoxLayout()
-        cb = QtWidgets.QCheckBox("Start printing")
+        cb = QtWidgets.QCheckBox(self.app.lang["start-printing"])
         cb.setChecked(True)
         self.cbStartPrinting=cb
         actions_layout.addWidget(cb)
 
         file_name_layout = QtWidgets.QHBoxLayout()
-        file_name_layout.addWidget(QtWidgets.QLabel("Output name"), alignment=QtCore.Qt.AlignLeft)
+        file_name_layout.addWidget(QtWidgets.QLabel(self.app.lang["output-name"]), alignment=QtCore.Qt.AlignLeft)
         self.leFileName = QtWidgets.QLineEdit()
         if self.app.outputFileName is not None:
             self.leFileName.setText(self.app.outputFileName)
@@ -92,15 +92,15 @@ class FileTab(QtWidgets.QWidget):
         else:
             menu=QtWidgets.QMenu(self)
 
-            newAct = QtWidgets.QAction('Save to file', menu)
+            newAct = QtWidgets.QAction(self.app.lang["save-to-file"], menu)
             newAct.triggered.connect(self.onSaveToFile)
             menu.addAction(newAct)
 
-            newAct = QtWidgets.QAction('Send to SHUI Wifi', menu)
+            newAct = QtWidgets.QAction(self.app.lang["send-to-printer"], menu)
             newAct.triggered.connect(self.onSendToWifi)
             menu.addAction(newAct)
 
-            newAct = QtWidgets.QAction('Send to Yandex disk', menu)
+            newAct = QtWidgets.QAction(self.app.lang["send-to-yandex"], menu)
             newAct.triggered.connect(self.onSendToYandexDisk)
             menu.addAction(newAct)
 

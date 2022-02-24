@@ -16,4 +16,7 @@ class CuraGCodeParser(GCodeSource):
         return self.large_preview
 
     def getProcessedGcode(self):
-        return []
+        from UM.Application import Application
+        app_instance=Application.getInstance()
+        gcode_dict = getattr(app_instance.getController().getScene(), "gcode_dict", None)
+        return gcode_dict.get(app_instance.getMultiBuildPlateModel().activeBuildPlate, None)

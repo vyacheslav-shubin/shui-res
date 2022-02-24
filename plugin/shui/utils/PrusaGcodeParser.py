@@ -6,6 +6,8 @@ from PyQt5.QtGui import (QPixmap, QImage)
 from .Core import GCodeSource
 
 class PrusaGCodeParser(GCodeSource):
+    large_preview=None
+    small_preview=None
 
     def __init__(self, fileName):
         super().__init__()

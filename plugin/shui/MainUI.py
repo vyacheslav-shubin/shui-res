@@ -23,40 +23,59 @@ class App(QtCore.QObject):
     onUartMessage = QtCore.pyqtSignal(object)
     onUartConnect = QtCore.pyqtSignal(object)
 
-    def __init__(self, appStartMode):
+    def __init__(self, appStartMode, **kwargs):
         super().__init__()
         self.startMode=appStartMode
-        if appStartMode== Core.StartMode.PRUSA:
+        if appStartMode==Core.StartMode.PRUSA:
             self.startMode = Core.StartMode.PRUSA
-            self.outputFileName = str(os.getenv('SLIC3R_PP_OUTPUT_NAME'))
+            self.outputFileName = os.getenv('SLIC3R_PP_OUTPUT_NAME')
+            if self.outputFileName is not None:
+                self.outputFileName=os.path.basename(self.outputFileName)
             self.inputFileName=sys.argv[1]
-        elif appStartMode== Core.StartMode.STANDALONE:
+        elif appStartMode==Core.StartMode.STANDALONE:
             if len(argv)>1:
                 self.inputFileName=sys.argv[1]
             else:
                 if os.getenv('START_MODE')=='TEST':
                     self.inputFileName="/home/shubin/electronic/firmware/mks-robin/my/shui-src/bh.gcode"
             pass
+        elif appStartMode==Core.StartMode.CURA:
+            if "output_file_name" in kwargs:
+                self.outputFileName = kwargs["output_file_name"]
+
         if self.inputFileName is not None and self.outputFileName is None:
             self.outputFileName = os.path.basename(self.inputFileName)
         self.wifiUart = ConnectionThread(self)
-        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")) as jf:
+        config_file=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..", "config.json")
+        if os.getenv('USER')=='shubin':
+            config_file=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..", "config_local.json")
+        with open(config_file) as jf:
             self.config=json.load(jf)
             jf.close()
+
+        langs_cfg=self.config["langs"]
+        selected=langs_cfg["selected"]
+        self.lang={}
+        if "inherited" in langs_cfg[selected]:
+            for inh in langs_cfg[selected]["inherited"]:
+                self.lang=langs_cfg[inh]["lang"]
+        self.lang.update(langs_cfg[selected]["lang"])
+        print(self.lang)
 
         self.proxy=QNetworkProxy()
 
         if "proxy" in self.config:
             proxy_config=self.config["proxy"]
-            if "host" in proxy_config:
-                self.proxy.setHostName(proxy_config["host"])
-            if "port" in proxy_config:
-                self.proxy.setPort(proxy_config["port"])
-            if "user" in proxy_config:
-                self.proxy.setUser(proxy_config["user"])
-            if "password" in proxy_config:
-                self.proxy.setPassword(proxy_config["password"])
-            self.proxy.setType(QNetworkProxy.HttpProxy)
+            if proxy_config["enabled"]:
+                if "host" in proxy_config:
+                    self.proxy.setHostName(proxy_config["host"])
+                if "port" in proxy_config:
+                    self.proxy.setPort(proxy_config["port"])
+                if "user" in proxy_config:
+                    self.proxy.setUser(proxy_config["user"])
+                if "password" in proxy_config:
+                    self.proxy.setPassword(proxy_config["password"])
+                self.proxy.setType(QNetworkProxy.HttpProxy)
 
         self.networkManager = QNetworkAccessManager()
         self.networkManager.setProxy(self.proxy)
@@ -68,7 +87,7 @@ class MainWidget(QtWidgets.QDialog):
     def __init__(self, app):
         super().__init__()
         self.app=app
-        self.setWindowTitle("SHUI Wifi Plugin")
+        self.setWindowTitle(self.app.lang["title"])
         self.setFixedWidth(500)
         self.setFixedHeight(300)
         self.mainLayout = QtWidgets.QVBoxLayout(self)
@@ -86,8 +105,14 @@ class MainWidget(QtWidgets.QDialog):
         self.btConnect = QtWidgets.QPushButton(self)
         self.btConnect.setMaximumSize(QtCore.QSize(100, 16777215))
 
+        self.btClose = QtWidgets.QPushButton(self)
+        self.btClose.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.btClose.setText(self.app.lang["close"])
+
         self.printerSelectLayout.addWidget(self.cbPrinterSelect)
         self.printerSelectLayout.addWidget(self.btConnect)
+        self.printerSelectLayout.addWidget(self.btClose)
+
         self.printerSelectLayout.setContentsMargins(2, 2, 2, 2)
 
         self.tabWidget = QtWidgets.QTabWidget(self)
@@ -98,8 +123,13 @@ class MainWidget(QtWidgets.QDialog):
         self.makeTabs()
 
         self.btConnect.clicked.connect(self.doConnect)
+        self.btClose.clicked.connect(self.doClose)
         self.app.onUartConnect.connect(self.doOnConnect)
         self.doOnConnect(False)
+        pass
+
+    def doClose(self):
+        self.close()
         pass
 
     def makeTabs(self):
@@ -124,22 +154,22 @@ class MainWidget(QtWidgets.QDialog):
 
     def doOnConnect(self, connected):
         if connected:
-            self.btConnect.setText("Disconnect")
+            self.btConnect.setText(self.app.lang["disconnect"])
         else:
-            self.btConnect.setText("Connect")
+            self.btConnect.setText(self.app.lang["connect"])
 
     def printerChanged(self, index):
         self.app.selectedPrinter = index
         pass
 
-def makeForm(startMode):
-    app=App(startMode)
+def makeForm(startMode, **kwargs):
+    app=App(startMode, **kwargs)
     form = MainWidget(app)
     form.show()
     return form
 
-def cura_application():
-    return makeForm(Core.StartMode.CURA)
+def cura_application(**kwargs):
+    return makeForm(Core.StartMode.CURA, **kwargs)
 
 def qt_application(startMode):
     import sys

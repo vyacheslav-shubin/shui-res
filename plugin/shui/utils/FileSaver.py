@@ -22,7 +22,6 @@ class NetworkSender(GCodeSaver):
             self.fileName=file_name
 
     def onUploadProgress(self, bytes_sent, bytes_total):
-        print("{:d}/{:d}".format(bytes_sent, bytes_total))
         if bytes_sent==0 and bytes_total==0:
             self.app.onProgress.emit(0, 1)
         else:
@@ -47,13 +46,13 @@ class FileSaver(GCodeSaver):
                 with open(fileName, "w") as out_file:
                     for r in rows:
                         if i%100==0:
-                            self.onProgress.emit(i/100, c)
+                            self.app.onProgress.emit(i/100, c)
                         i=i+1
                         out_file.write(r)
-                    self.onProgress.emit(1, 1)
+                    self.app.onProgress.emit(1, 1)
                     out_file.close()
             finally:
-                self.onFinished.emit(True)
+                self.app.onUploadFinished.emit(True)
             pass
 
         pass

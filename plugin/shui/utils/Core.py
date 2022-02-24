@@ -8,9 +8,6 @@ class StartMode(Enum):
 
 
 class GCodeSource:
-    large_preview=None
-    small_preview=None
-
     def __init__(self):
         pass
 
