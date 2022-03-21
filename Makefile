@@ -7,6 +7,10 @@ pics-only:
 	/usr/bin/python3 ./make_res.py
 
 plg:
-	/usr/bin/python3  -m PyQt5.uic.pyuic -x plugin/test.ui -o plugin/test.py
+	/usr/bin/python3  -m PyQt5.uic.pyuic -x test/test.ui -o test/test.py
+	/usr/bin/python3 test/test.py
 
-#/usr/lib/x86_64-linux-gnu/qt5/plugins/designer
+plagin-git:
+	cp plugin /home/shubin/electronic/firmware/mks-robin/my/Marlin/.pio/firmware/
+
+#/usr/lib/x86_64-linux-gnu/qt5/bin/designer
